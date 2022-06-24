@@ -1,31 +1,23 @@
 
-<div id="mydiv">
 
-  <h1>Welcome to "Apollo" Hospital</h1>
+    
 
+
+
+
+
+<div class="container py-5 d-flex justify-content-between align-items-center">
+  <h1 class="display-3 fw-bold">
+    <a class="text-decoration-none text-dark" routerLink="/home">Hospital Management</a>
+  </h1>
+  <div class="d-flex justify-content-between">
+    <a class="btn btn-outline-info me-3" routerLink="/create-doctor">Add Doctor</a>
+    <a class="btn btn-outline-info me-3" routerLink="/create-patient">Add Patient</a>
+    <a class="btn btn-outline-info me-3" routerLink="/show-doctor">Search Doctor</a>
+    <a class="btn btn-outline-info me-3" routerLink="/show-patient">Search Patient</a>
+  </div>
 </div>
-<hr>
 
- 
-  <nav class="nav " style="margin-top:px;">
-    
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/home']"><input type="button" id="suk" class="btns" value="HOME"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/create-doctor']"><input type="button" class="btns" value="Add New Doctor"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/create-patient']"><input type="button" class="btns" value="Add New Patient"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/show-doctor']"><input type="button" class="btns" value="Doctor Information"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/show-patient']"><input type="button" class="btns" value="Patient Information"></a>
-    </li>
-    
-    </nav>
-
-    <router-outlet ></router-outlet>
-  
+<div class="container">
+  <router-outlet ></router-outlet>
+</div>
